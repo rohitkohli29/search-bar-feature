@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       let filteredProducts = searcher.search(query).map(result => result.item);
       
-      if(filteredProducts.length == 0){
+      if(filteredProducts.length == 0 && e.target.value == ""){
           filteredProducts = products;
       }
 
